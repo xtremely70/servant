@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ supplier.name }} - 상세정보{% endblock %}
+{% block header %}{{ supplier.name }}{% endblock %}
+{% block content %}
+<h3>개요</h3>
+<table class="table">
+  <tr>
+    <td>공급자 id</td>
+    <td>{{ supplier.id }}</td>
+  </tr>
+  <tr>
+    <td>관리자 메모</td>
+    <td><pre>{{ supplier.memo }}</pre></td>
+  </tr>
+  <tr>
+    <td>상태</td>
+    <td>{{ supplier.status }}</td>
+  </tr>
+  <tr>
+    <td>입력일시</td>
+    <td>{{ supplier.created_at }}</td>
+  </tr>
+</table>
+
+<h4>공급 물품</h4>
+<table class="table">
+  <tr>
+    <td>
+    </td>
+  </tr>
+</table>
+{% endblock %}
